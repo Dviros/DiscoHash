@@ -10,8 +10,8 @@ import pwnagotchi.plugins as plugins
 
 
 class discohash(plugins.Plugin):
-    __author__ = 'v0yager'
-    __version__ = '1.1.0'
+    __author__ = 'flamebarke'
+    __version__ = '2.0.0'
     __license__ = 'GPL3'
     __description__ = '''
                     DiscoHash extracts hashes from pcaps (hashcat mode 22000) using hcxpcapngtool,
@@ -149,8 +149,7 @@ class discohash(plugins.Plugin):
                         },
                     ],
                     'footer': {
-                        'text': 'Pwnagotchi v1.5.5 - DiscoHash Plugin v{} \
-                        \nAuthors PwnMail: f033aa5cd581f67ac5f88838de002fc240aadc74ee2025b0135e5fff4e4b5a4a'.format(self.__version__)
+                        'text': 'Pwnagotchi v1.7.5 - DiscoHash Plugin v{}'.format(self.__version__)
                     }
                     }
                 ]
