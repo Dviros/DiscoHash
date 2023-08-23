@@ -31,16 +31,18 @@ sudo su
 apt-get update
 apt-get install libcurl4-openssl-dev libssl-dev zlib1g-dev
 cd /opt
-git clone https://github.com/ZerBea/hcxtools.git
+git clone https://salsa.debian.org/pkg-security-team/hcxtools.git
+git clone https://github.com/ZerBea/hcxdumptool.git
 cd hcxtools
-make
+make install
+cd ../hcxdumptool
 make install
 ```
 - [X] Create a new Discord server and set up a new [web hook](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks).
 - [X] Copy discohash.py from this repo to /usr/local/share/pwnagotchi/installed-plugins/ (if the directory doesn't exist create it)
 ```
-cd /usr/local/share/pwnagotchi/installed-plugins
-sudo wget https://raw.githubusercontent.com/flamebarke/DiscoHash/main/discohash.py
+cd /usr/local/share/pwnagotchi/custom-plugins
+wget https://raw.githubusercontent.com/Dviros/DiscoHash/main/discohash.py
 ```
 - [X] Set the following options within /etc/pwnagotchi/config.toml
 ```
